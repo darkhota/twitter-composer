@@ -1,0 +1,33 @@
+{
+  "logs": [
+    {
+      "message": "1122 wireless down",
+      "attention": true,
+      "tech": "John Doe",
+      "date": "2021-08-08T13:26:35.661Z",
+      "id": 3
+    }
+  ],
+  "techs": [
+    {
+      "id": 3,
+      "firstName": "Sara",
+      "lastName": "Wilson"
+    },
+    {
+      "firstName": "Jen",
+      "lastName": "Williams",
+      "id": 4
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Lionel",
+      "id": 5
+    },
+    {
+      "firstName": "Tony",
+      "lastName": "Stark",
+      "id": 6
+    }
+  ]
+}
