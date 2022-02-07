@@ -1,39 +1,49 @@
-import React, { useRef } from "react";
-import { connect } from "react-redux";
+import React from "react";
+import { StyledNav } from "../../styles/Nav.styled";
+
 import PropTypes from "prop-types";
-import { searchLogs } from "../../actions/logActions";
+// s
+// import MessagesContext from "../../context/messages/messagesContext";
 
-const SearchBar = ({ searchLogs }) => {
-  const text = useRef("");
+const SearchBar = ({ searchmessages }) => {
+  // const messagesContext = useContext(MessagesContext);
+  // const text = useRef("");
 
-  const onChange = e => {
-    searchLogs(text.current.value);
-  };
+  // const { searchMessages } = messagesContext;
+
+  // const onChange = e => {
+  //   searchMessages(text.current.value);
+  // };
   return (
-    <nav style={{ marginBottom: "30px" }} className="blue">
-      <div className="nav-wrapper">
-        <form>
+    <StyledNav>
+      <nav style={{ marginBottom: "30px" }} className="nav-bar">
+        <div className="nav-wrapper">
+          <div className="nav-heading">
+            <h4>Twitter Composer</h4>
+          </div>
+          {/* <form>
           <div className="input-field">
             <input
               id="search"
               type="search"
-              placeholder="Search Logs..."
+              placeholder="Search messages..."
               ref={text}
               onChange={onChange}
             />
-            <label className="label-icon" htmlfor="search">
+            <label className="label-icon" htmlFor="search">
               <i className="material-icons">search</i>
             </label>
             <i className="material-icons">close</i>
           </div>
-        </form>
-      </div>
-    </nav>
+        </form> */}
+        </div>
+      </nav>
+    </StyledNav>
   );
 };
 
 SearchBar.prototypes = {
-  searchLogs: PropTypes.func.isRequired
+  searchmessages: PropTypes.func.isRequired
 };
 
-export default connect(null, { searchLogs })(SearchBar);
+export default SearchBar;
